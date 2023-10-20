@@ -8,6 +8,12 @@
 ul {
     list-style-type: none;
 }
+a {
+    text-decoration: none;
+}
+.btn-modal {
+    color: rgb(var(--colorfg));
+}
 li {
     display: flex;
     padding: 10px 8px;
