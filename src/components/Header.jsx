@@ -60,7 +60,6 @@ export default function Header() {
                 <p id="my-title" title=":D">Devollo</p>
                 <div id="ml-left"/>
                 <div>
-                    <a href="https://devollox.fun/patch" id="btn-home">Patch</a>
                     <a href="https://github.com/Devollox" id="btn-github">GitHub</a>
                 </div>
                 <div onClick={handleClickOn} className="container-bar" id="getClickNavbar">
