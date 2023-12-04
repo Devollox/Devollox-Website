@@ -8,4 +8,4 @@ My first project and the only one that I somehow continued to develop. Yes, seni
 
 Demo - https://devollox.fun/
 
-12/5/2023 
+12/5/2023 - update 
