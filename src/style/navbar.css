@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#my-title {
+  margin-left: 10%;
+}
+#my-title::after {
+  content: "X";
+  color: grey;
+}
+#btn-github, #btn-home {
+  color: var(--tw-color-theme);
+}
+#ml-left {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+#content-navbar a {
+  font-family: 'Roboto', sans-serif;
+  display: var(--tw-navbar-modal);
+  font-weight: 400;
+  margin: 30px 20px;
+  text-decoration: none;
+  font-size: var(--font-size-a);
+}
+#content-navbar a:hover {
+  scale: 110%;
+  transition: 20ms;
+}
+#content-navbar p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 28px;
+  text-decoration: none;
+  font-size: var(--font-size-p);
+}
+#content-navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  -webkit-box-shadow:  var(--tw-shadow-1);
+  -moz-box-shadow: var(--tw-shadow-1);
+  box-shadow: var(--tw-shadow-1);
+  backdrop-filter: blur(3px) ;
+  -webkit-backdrop-filter: var(--tw-backdrop-blur);
+  overflow: hidden;
+  display: flex;
+}
+.container-bar {
+  rotate: 180deg;
+  scale: 80%;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 87%;
+  margin-top: 23px;
+  display: var(--tw-navbar-modal-no-hide);
+}
+.halder-hide-content {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-right: 10%;
+  display: var(--tw-halder-modal);
+}
+.halder-hide-content-down {
+  margin-bottom: -32px;
+}
+#get-click-engine {
+  display: var(--tw-hide-engine);
+}
+#get-click-loon {
+  display: var(--tw-hide-loon);
+}
+.image-engine {
+  display: var(--tw-navbar-modal);
+  filter: grayscale(100%);
+}
+
+.image-engine:hover {
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
