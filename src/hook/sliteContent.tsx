@@ -1,5 +1,5 @@
-
 'use client'
 export default function useSlite() {
-    document.getElementById("box").scrollIntoView({block: "center", behavior: "smooth"});
+    let box : any = document.getElementById('box')
+    box.scrollIntoView({block: "center", behavior: "smooth"});
 }

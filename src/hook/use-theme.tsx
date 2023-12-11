@@ -7,8 +7,8 @@ const defaultTheme = idDarkTheme ? 'dark' : 'light'
 export const useTheme = () => {
 
     setTimeout(() => {
-        // @ts-ignore
-        document.getElementById('body-switch-theme').style.transition = '500ms'
+        let bodySwitchTheme: any = document.getElementById('body-switch-theme')
+        bodySwitchTheme.style.transition = '500ms'
     }, 1000)
 
     const [theme, setTheme] = useState(localStorage.getItem('app-theme') || defaultTheme)
