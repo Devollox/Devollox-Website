@@ -1,18 +1,38 @@
 import React from "react";
+import styled from "styled-components";
 
+
+const IntroGrid = styled.div`
+
+`
+
+const IntroTitle = styled.div`
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: poppins, sans-serif;
+  transition-duration: 0.15s;
+  color: rgb(var(--color-card));
+`
+
+const IntroAlign = styled.div`
+  justify-content: center;
+  display: flex;
+`
 export default function Dashboard () {
     return (
-        <div className='my-info'>
-            <div className="main-name">
-                <a className="main-font">Welcome to my dashboard</a>
-            </div>
-            <div className="text-align">
-                <h1 className="main-font-status">Hello, my name is Devollox, and I am a programmer who values
+        <IntroGrid>
+            <IntroTitle>
+                <a className="gradient_text">Welcome to my dashboard</a>
+            </IntroTitle>
+            <IntroAlign>
+                <h1 className="intro_subtitle">Hello, my name is Devollox, and I am a programmer who values
                     creativity
                     and
                     optimization.
                 </h1>
-            </div>
-        </div>
+            </IntroAlign>
+        </IntroGrid>
     )
 }

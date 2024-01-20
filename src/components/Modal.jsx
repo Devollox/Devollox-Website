@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 const Modal = ({ open, handleClick }) => {
     function handlerClickSteam() {
@@ -7,18 +8,26 @@ const Modal = ({ open, handleClick }) => {
     function handlerClickGithub() {
         window.location.href = 'https://github.com/Devollox';
     }
+
+    const ModalContent = styled.div`
+      z-index: 1;
+      margin-left: 1rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 20px;
+      padding-top: 90px;
+    `
+
     return (
         <>
             {open && (
-                <div className="contentNew" id="getHideContent">
-                    <div>
-                        <ul className="table">
-                            <li><a href='https://steamcommunity.com/id/Cookiemp4/' className="btn-modal lineHideBlock">Steam</a></li>
-                            <li id="githubOfLi"><a href='https://github.com/Devollox' className="btn-modal lineHideBlock">GitHub</a></li>
-                            <li id="otherOfLi"><a className="btn-modal lineHideBlock">Other</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <ModalContent className="modal_content">
+                     <ul className="table_content">
+                         <li><a href='https://steamcommunity.com/id/Cookiemp4/' className="btn_modal hiding_text">Steam</a></li>
+                         <li><a href='https://github.com/Devollox' className="btn_modal hiding_text">GitHub</a></li>
+                         <li><a className="btn_modal hiding_text">Other</a></li>
+                     </ul>
+                </ModalContent>
             )}
         </>
     );
