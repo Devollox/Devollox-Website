@@ -21,12 +21,10 @@ export default function Gridcontent() {
       margin-bottom: 0.5rem;
       font-family: poppins, sans-serif;
       font-size: 20px;
-    `
-    const GridLine = styled.p`
-      opacity: 80%;
-      background-color: rgb(var(--tw-border-color-opacity));
-      height: 1px;
-      width: 100%;
+      padding-bottom: 5px;
+      border-style: solid;
+      border-width: 0px 0px 1px 0px;
+      border-color: rgb(var(--tw-border-color-opacity));;
     `
 
     const GridContainer = styled.div`
@@ -91,7 +89,6 @@ export default function Gridcontent() {
             <TitleGrid>
                 <a className="grid_text" title="and tools that I use or have ever learned">My Skill</a>
             </TitleGrid>
-            <GridLine/>
             <GridContainer>
                 <GridContainerSkills>
                     <WrapperContainer src={ReactLogo} name="React"/>

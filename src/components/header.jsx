@@ -20,12 +20,6 @@ import Dashboard from "./dashboard";
 import styled from "styled-components";
 import Footer from "./footer";
 
-const GridLine = styled.p`
-  opacity: 80%;
-  background-color: rgb(var(--tw-border-color-opacity));
-  height: 1px;
-  width: 100%;
-`
 
 export default function Header() {
 
@@ -101,6 +95,10 @@ export default function Header() {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.5rem;
+      padding-bottom: 5px;
+      border-style: solid; 
+      border-width: 0px 0px 1px 0px; 
+      border-color: rgb(var(--tw-border-color-opacity));;
     `
     const GridContainerSocial = styled.a`
       font-family: poppins, sans-serif;
@@ -153,7 +151,6 @@ export default function Header() {
                                          id="get_click_moon"></img>
                                 </div>
                             </CenterMain>
-                            <GridLine/>
                             <Content style={{marginTop: "1.5rem"}}>
                                 <div onClick={handlerClickSteam} className="container_social">
                                     <div className="steam_logo">

@@ -14,17 +14,10 @@ import styled from "styled-components";
 
 export default function Footer() {
 
-    const GridLine = styled.p`
-      opacity: 80%;
-      background-color: rgb(var(--tw-border-color-opacity));
-      height: 1px;
-      width: 100%;
-      margin-top: 2rem;
-    `
+
 
     const WrapperContent = styled.div`
-        margin-bottom: 5rem;
-        
+      margin: 0 90px 5rem 90px;
     `
     const WrapperText = styled.a`
       display: flex;
@@ -33,12 +26,16 @@ export default function Footer() {
       padding-top: 1rem;
       color: rgb(var(--colorfg));
       font-family: "Roboto";
+      text-align: center;
+      margin-top: 2rem;
+      border-style: solid;
+      border-width: 1px 0px 0px 0px;
+      border-color: rgb(var(--tw-border-color-opacity));;
     `
     return (
         <WrapperContent>
-            <GridLine/>
             <WrapperText>
-                <a>This site supports the developer</a>
+                <a>This site was developed by Devollox and is getting regular updates</a>
             </WrapperText>
         </WrapperContent>
     )
