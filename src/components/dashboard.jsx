@@ -17,23 +17,43 @@ export default function Dashboard() {
       transition-duration: 0.15s;
       color: rgb(var(--color-card));
     `
-
+    const Title = styled.a`
+      background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+      line-height: 1;
+      font-family: poppins, sans-serif;
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: 800;
+      font-size: var(--font-size);
+    `
     const IntroAlign = styled.div`
       justify-content: center;
       display: flex;
     `
-
+    const Intro = styled.h1`
+      font-family: poppins, sans-serif;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: var(--font-size-name);
+      color: rgb(var(--color-card));
+      font-weight: 400;
+    `
     return (
         <IntroGrid>
             <IntroTitle>
-                <a className="gradient_text">Welcome to my dashboard</a>
+                <Title>Welcome to my dashboard</Title>
             </IntroTitle>
             <IntroAlign>
-                <h1 className="intro_subtitle">Hello, my name is Devollox, and I am a programmer who values
+                <Intro>Hello, my name is Devollox, and I am a programmer who values
                     creativity
                     and
                     optimization.
-                </h1>
+                </Intro>
             </IntroAlign>
         </IntroGrid>
     )

@@ -66,8 +66,11 @@ export default function Gridcontent() {
         box-shadow: var(--tw-shadow-7);
       }
       
+      &:active {
+        scale:90%;
+      }
+      
     `
-
 
     const Grid_Content = styled.div`
 
@@ -77,7 +80,7 @@ export default function Gridcontent() {
         return (
             <Container className={props.class}>
                 <img src={props.src} alt={"noo"} width={15}/>
-                <div style={{marginLeft: "0.3rem"}} className="container_name">{props.name}</div>
+                <div style={{marginLeft: "0.3rem"}}>{props.name}</div>
             </Container>
         )
     }

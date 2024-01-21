@@ -6,7 +6,6 @@ import Header from "./components/header";
 import './styles/content.css'
 import './styles/navbar.css'
 import './styles/global.css'
-import './styles/grid.css'
 import './styles/modal.css'
 import './styles/theme/system.css'
 

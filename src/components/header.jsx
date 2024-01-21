@@ -109,74 +109,75 @@ export default function Header() {
     const Background = styled.div`
       padding-top: 80px;
     `
+
     return (
         <body id='body_switch_theme'>
-        <nav id="navbar_content">
-            <p id="navbar_title" title=":D">Devollo</p>
-            <div id="ml_left"/>
-            <IntroTitle>
-                <a href="https://github.com/Devollox" id="btn_github">GitHub</a>
-            </IntroTitle>
-            <BarContainer onClick={handleClickOn} id="get_click_navbar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-            </BarContainer>
-            <div className="halder_hide_content">
-                <img onClick={handlerDarkClick} src={Engine} alt={"noo"} height={30} className="image_engine"
-                     id="get_click_engine"></img>
-                <img onClick={handlerLightClick} src={Moon} alt={"noo"} height={30} className="image_engine"
-                     id="get_click_moon"></img>
-            </div>
-        </nav>
+            <nav id="navbar_content">
+                <p id="navbar_title" title=":D">Devollo</p>
+                <div id="ml_left"/>
+                <IntroTitle>
+                    <a href="https://github.com/Devollox" id="btn_github">GitHub</a>
+                </IntroTitle>
+                <BarContainer onClick={handleClickOn} id="get_click_navbar">
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </BarContainer>
+                <div className="halder_hide_content">
+                    <img onClick={handlerDarkClick} src={Engine} alt={"noo"} height={30} className="image_engine"
+                         id="get_click_engine"></img>
+                    <img onClick={handlerLightClick} src={Moon} alt={"noo"} height={30} className="image_engine"
+                         id="get_click_moon"></img>
+                </div>
+            </nav>
         <Modal open={isOpen} handleClick={handleClick}/>
-        <div id="hiding_content">
-            <Background>
-                <img src={BackGround} alt={"noo"} id="background_image"/>
-            </Background>
-            <GridConteniener>
-                <Dashboard/>
-                    <SocialInfo>
-                        <CenterMain>
-                            <GridContainerSocial title="">
-                                My
-                                Social
-                            </GridContainerSocial>
-                            <div className="hiding_image">
-                                <a onClick={useSlite} className="down_arrow">↓</a>
-                                <img onClick={handlerDarkClick} src={Engine} alt={"noo"} height={30}
-                                     className="image_engine"
-                                     id="get_click_engine"></img>
-                                <img onClick={handlerLightClick} src={Moon} alt={"noo"} height={30}
-                                     className="image_engine"
-                                     id="get_click_moon"></img>
-                            </div>
-                        </CenterMain>
-                        <GridLine/>
-                        <Content style={{marginTop: "1.5rem"}}>
-                            <div onClick={handlerClickSteam} className="container_social">
-                                <div className="steam_logo">
-                                    <img src={StemLogo} alt={"noo"} width={33}/>
+            <div id="hiding_content">
+                <Background>
+                    <img src={BackGround} alt={"noo"} id="background_image"/>
+                </Background>
+                <GridConteniener>
+                    <Dashboard/>
+                        <SocialInfo>
+                            <CenterMain>
+                                <GridContainerSocial title="">
+                                    My
+                                    Social
+                                </GridContainerSocial>
+                                <div className="hiding_image">
+                                    <a onClick={useSlite} className="down_arrow">↓</a>
+                                    <img onClick={handlerDarkClick} src={Engine} alt={"noo"} height={30}
+                                         className="image_engine"
+                                         id="get_click_engine"></img>
+                                    <img onClick={handlerLightClick} src={Moon} alt={"noo"} height={30}
+                                         className="image_engine"
+                                         id="get_click_moon"></img>
                                 </div>
-                                <NavbarSocial>
-                                    <div className="first_container">My Steam</div>
-                                    <div className="second_container">The best gaming platform</div>
-                                </NavbarSocial>
-                            </div>
-                            <div className="container_social">
-                                <img src={OpenAI} alt={"noo"} width={33}/>
-                                <NavbarSocial>
-                                    <div className="first_container_animated">Social Network ID</div>
-                                    <div className="second_container">Created a social card interface</div>
-                                </NavbarSocial>
-                            </div>
-                        </Content>
-                    </SocialInfo>
-                <Gridcontent/>
-                <Footer/>
-            </GridConteniener>
-            <div id="box" className="box"/>
-        </div>
+                            </CenterMain>
+                            <GridLine/>
+                            <Content style={{marginTop: "1.5rem"}}>
+                                <div onClick={handlerClickSteam} className="container_social">
+                                    <div className="steam_logo">
+                                        <img src={StemLogo} alt={"noo"} width={33}/>
+                                    </div>
+                                    <NavbarSocial>
+                                        <div className="first_container">My Steam</div>
+                                        <div className="second_container">The best gaming platform</div>
+                                    </NavbarSocial>
+                                </div>
+                                <div className="container_social">
+                                    <img src={OpenAI} alt={"noo"} width={33}/>
+                                    <NavbarSocial>
+                                        <div className="first_container_animated">Social Network ID</div>
+                                        <div className="second_container">Created a social card interface</div>
+                                    </NavbarSocial>
+                                </div>
+                            </Content>
+                        </SocialInfo>
+                    <Gridcontent/>
+                    <Footer/>
+                </GridConteniener>
+                <div id="box" className="box"/>
+            </div>
         </body>
     );
 };
