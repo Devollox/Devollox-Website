@@ -46,10 +46,6 @@
     color: rgb(var(--color-card));
     font-weight: 400;
 }
-.grid_text {
-    font-family: poppins, sans-serif;
-    font-size: 20px;
-}
 .hiding_image img {
     margin-left: 30px;
 }
@@ -127,17 +123,9 @@
     font-size: 12px;
     margin-left: 10px;
 }
-.box-grid-container {
-    margin-bottom: 5rem;
-    margin-top: 1.5rem;
-}
 .box_end {
     grid-column-start: var(--tw-grid-start);
     grid-column-end: var(--tw-grid-end);
-
-}
-.container_name {
-    margin-left: 0.3rem;
 }
 @keyframes gradient {
     0% {

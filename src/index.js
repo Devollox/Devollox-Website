@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Header from "./components/Header";
+import Header from "./components/header";
 
 import './styles/content.css'
 import './styles/navbar.css'

@@ -18,9 +18,6 @@ body {
   max-height: var(--max-height);
 }
 
-#bodyKit {
-  transition: 0s;
-}
 body {
   background-color: rgb(var(--colorbg));
   color: rgb(var(--colorfg));
