@@ -71,7 +71,6 @@ export default function Gridcontent() {
     `
 
     const Grid_Content = styled.div`
-
     `
 
     function WrapperContainer(props) {
