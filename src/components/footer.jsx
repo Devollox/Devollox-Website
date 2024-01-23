@@ -17,7 +17,7 @@ export default function Footer() {
 
 
     const WrapperContent = styled.div`
-      margin-top: 4rem;
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
     `
