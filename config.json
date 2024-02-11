@@ -1,0 +1,94 @@
+{
+  "name": "Devollox",
+  "description": "Hi, I'm Devollox",
+  "html_url": "https://github.com/Devollox/Devollox",
+  "logo": "https://raw.githubusercontent.com/Devollox/Devollox/main/logo.png",
+
+  
+  "token": "716185267152617485",
+  "large_image": "https://media.tenor.com/_sRq7f0tQLEAAAAC/reactjs.gif",
+  "small_image": "https://i.pinimg.com/originals/2d/b2/8c/2db28c089e0f427bad17685b0c108a5d.jpg",
+  "buttonFirst": {
+    "first": {
+      "firstButton": "My GitHub.",
+      "secondButton": "https://github.com/Devollox"
+    },
+    "second": {
+      "firstButton": "My Steam.",
+      "secondButton": "https://steamcommunity.com/id/Cookiemp4/"
+    }
+  },
+  "buttonSecond": {
+    "firstButton": "My WebSite.",
+    "secondButton": "https://devollox.fun/"
+  },
+  "timestamps": {
+    "start": 111010,
+    "end": ""
+  },
+  "objectDetails": [
+    "Next",
+    "React",
+    "Vue",
+    "jQuery",
+    "Matplotlib",
+    "Seaborn",
+    "Keras",
+    "Pandas",
+    "Fuel",
+    "Anko",
+    "Tailwind",
+    "DressCode",
+    "Picasso",
+    "Covenant",
+    "D3.js",
+    "Three",
+    "Ember",
+    "Svelte",
+    "Node",
+    "Express",
+    "Vue",
+    "SciPy",
+    "Angular",
+    "MongoDB",
+    "Docker",
+    "Discord.js",
+    "DotNetCore"
+  ],
+  "objectState": [
+    "Navbar.tsx",
+    "App.tsx",
+    "Sidebar.tsx",
+    "ReactModule.tsx",
+    "StyleComponents.tsx"
+  ],
+  "objectSmallText": [
+    "TypeScript",
+    "C#",
+    "Python",
+    "C++",
+    "JavaScript",
+    "Pascal",
+    "Delphi",
+    "F#",
+    "Visual Basic",
+    "R",
+    "YAML",
+    "PowerShell",
+    "SQL",
+    "C",
+    "GoLang",
+    "HTML",
+    "Swift",
+    "Java",
+    "Kotlin",
+    "Rust",
+    "Ruby",
+    "1C",
+    "PHP",
+    "Kotlin",
+    "Scala",
+    "Assembler"
+  ]
+}
+
