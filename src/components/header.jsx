@@ -91,8 +91,6 @@ export default function Header() {
     const Background = styled.div`
         padding-top: 80px;
     `
-    let wrapperSocial = document.getElementById('wrapper_social_content')
-
 
     Promise.all([axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`),axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`)])
         .then(function (result) {
