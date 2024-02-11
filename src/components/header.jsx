@@ -97,9 +97,6 @@ export default function Header() {
     Promise.all([axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`),axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`)])
         .then(function (result) {
             let JSON = result[0].data, wrapperSocial = document.getElementById('wrapper_social_content')
-
-            console.log(wrapperSocial.textContent)
-
             setTimeout(() => {
                 wrapperSocial.innerHTML = `
                     <a href="${JSON.html_url}">
