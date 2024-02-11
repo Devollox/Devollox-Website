@@ -1,4 +1,3 @@
-
 .card{
     max-width: 350px;
     width: 100%;
@@ -11,7 +10,6 @@
     display: flex;
     align-items: center;
 }
-
 .header .img{
     height: 75px;
     width: 75px;
@@ -84,7 +82,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0,0,0,0.05) 20%, #d9d9d9 40%, #d9d9d9 100%);
+    background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0,0,0,0.05) 20%, var(--background-image-skeletron) 40%, #d9d9d9 100%);
     background-repeat: no-repeat;
     background-size: 450px 400px;
     animation: shimmer 1s linear infinite;

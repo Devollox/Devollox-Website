@@ -17,17 +17,6 @@ import axios from "axios";
 import './index.css'
 
 export default function Header() {
-    const engine = document.getElementById('get_click_engine')
-    const moon = document.getElementById('get_click_moon')
-
-    function sleep(millis) {
-        let date = new Date();
-        let curDate = null;
-        do {
-            curDate = new Date();
-        }
-        while (curDate - date < millis);
-    }
 
     const {isOpen, onToggle} = useModalState();
     const handleClick = () => {
@@ -102,16 +91,18 @@ export default function Header() {
     const Background = styled.div`
         padding-top: 80px;
     `
+    let wrapperSocial = document.getElementById('wrapper_social_content')
 
-    Promise.all([axios.get(`https://raw.githubusercontent.com/Devollox/Devollox/main/config.json`)])
+
+    Promise.all([axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`),axios.get(`https://raw.githubusercontent.com/Devollox/Devollox-Website/main/config.json`)])
         .then(function (result) {
             let JSON = result[0].data, wrapperSocial = document.getElementById('wrapper_social_content')
 
+            console.log(wrapperSocial.textContent)
 
-
-                setInterval(() => {
-                    wrapperSocial.innerHTML = `
-                        <a href="${JSON.html_url}">
+            setTimeout(() => {
+                wrapperSocial.innerHTML = `
+                    <a href="${JSON.html_url}">
                         <div class="container_social">
                             <img src='${JSON.logo}' alt={"noo"} width="33"/>
                             <div style="margin-left: 2px">
@@ -121,11 +112,30 @@ export default function Header() {
                         </div>
                     </a>
                     `
-                }, 1000)
 
 
+
+            }, 1000)
         })
 
+    const LoadingElement = () => {
+        return (
+            <div className="container_social skeletron_loading">
+                <div className="logo_details details">
+                    <span style={{width: '40px', height: '40px', marginRight: '10px'}}
+                          className="logo_name name"></span>
+                </div>
+                <div className="details">
+                    <span className="name"></span>
+                    <span className="about"></span>
+                </div>
+                <div style={{marginLeft: '2px'}}>
+                    <div className="first_container_animated"></div>
+                    <div className="second_container"></div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <body id='body_switch_theme'>
@@ -188,21 +198,7 @@ export default function Header() {
                             </NavbarSocial>
                         </div>
                         <div id="wrapper_social_content">
-                            <div className="container_social skeletron_loading">
-
-                                <div className="logo_details details">
-                                    <span style={{width: '40px', height: '40px', marginRight: '10px'}} className="logo_name name"></span>
-                                </div>
-                                <div className="details">
-                                    <span className="name"></span>
-                                    <span className="about"></span>
-                                </div>
-
-                                <div style={{marginLeft: '2px'}}>
-                                    <div className="first_container_animated"></div>
-                                    <div className="second_container"></div>
-                                </div>
-                            </div>
+                            <LoadingElement/>
                         </div>
                     </Content>
                 </SocialInfo>
