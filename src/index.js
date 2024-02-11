@@ -9,10 +9,11 @@ import './styles/global.css'
 import './styles/modal.css'
 import './styles/theme/system.css'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Header/>
+      <Header/>
     </React.StrictMode>
 );
 

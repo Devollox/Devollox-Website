@@ -14,8 +14,6 @@ import styled from "styled-components";
 
 export default function Footer() {
 
-
-
     const WrapperContent = styled.div`
       margin-top: 2rem;
       display: flex;
