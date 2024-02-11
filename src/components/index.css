@@ -104,3 +104,63 @@
         background-position: 450px 0;
     }
 }
+
+
+
+.place-holder {
+    position: absolute;
+    overflow: hidden;
+    height: 10px;
+    width: 80px;
+    background: rgb(246, 247, 249);
+}
+
+.place-holder::before {
+    content: "";
+    background-image: linear-gradient(
+            to right,
+            rgb(255, 247, 249) 0%,
+            rgb(233, 235, 238) 20%,
+            rgb(246, 247, 249) 40%,
+            rgb(246, 247, 249) 100%
+    );
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    animation: 1s placeHolderShimmer linear infinite;
+}
+.place-font {
+    position: absolute;
+
+    margin-top: -3px;
+}
+.post {
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+    margin-left: 180px;
+    margin-top: -12px;
+
+
+}
+@keyframes placeHolderShimmer {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.date_footer {
+    margin-bottom: 20px;
+}
+.time_update {
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+}
+

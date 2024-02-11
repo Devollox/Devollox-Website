@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 
 export const useModalState = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,6 @@ export const useModalState = () => {
         setIsOpen(!isOpen);
     };
 
-    return { isOpen, onOpen, onClose, onToggle };
+    return {isOpen, onOpen, onClose, onToggle};
 };
 
