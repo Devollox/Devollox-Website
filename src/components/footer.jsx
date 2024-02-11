@@ -26,7 +26,7 @@ export default function Footer() {
 
     Promise.all([axios.get("https://api.github.com/repos/Devollox/Devollox/commits")])
         .then(function (result ){
-            let date  = result[0].data[0].commit.author.date, time = document.getElementById('time'), placeHolder = document.getElementById('place-holder')
+            let date  = result[0].data[0].commit.author.date, time = document.getElementById('time'), placeHolder = document.getElementById('place-holder'), year = new Date();
             let optionsTime = {
                 optionsDay: {
                     day: 'numeric',
@@ -47,7 +47,7 @@ export default function Footer() {
                     <a title="Month/Day/Year" style="color: var(--colorfg)" class="hiding_text date_footer">
                         ${getDate(date)[0]}/
                         ${getDate(date)[1]}/
-                        2024
+                        ${year.getFullYear()}
                     </a>
                  </a>
             `

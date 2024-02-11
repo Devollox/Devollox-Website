@@ -10,7 +10,8 @@ export default function Update() {
             let update = document.getElementById('update_info')
 
             for (let a = 0; a < result[0].data.length; a++) {
-                let date = result[0].data[a].commit.author.date
+                let date = result[0].data[a].commit.author.date, year = new Date();
+
                 let optionsTime = {
                     optionsDay: {
                         day: 'numeric',
@@ -37,10 +38,11 @@ export default function Update() {
                     11: 'Nov',
                     12: 'Dec'
                 }
+
                 update.insertAdjacentHTML('beforebegin', `
                 <div class="update_information">
                     <div style="margin-bottom: 20px" class="wrapper_update_date">
-                        <div class="line_text">${dateMonths[getDate(date)[0]]}&nbsp;&nbsp;${getDate(date)[1]}, 2024</div>
+                        <div class="line_text">${dateMonths[getDate(date)[0]]}&nbsp;&nbsp;${getDate(date)[1]}, ${year.getFullYear()}</div>
                         <a style="color: var(--colorfg);" href="${result[0].data[a].html_url}">
                          <div>${result[0].data[a].commit.message}</div>
                         </a>
