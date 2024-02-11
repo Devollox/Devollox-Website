@@ -112,9 +112,6 @@ export default function Header() {
                         </div>
                     </a>
                     `
-
-
-
             }, 1000)
         })
 
