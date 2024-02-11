@@ -2,7 +2,7 @@
   "name": "My Website",
   "description": "My personal Website",
   "html_url": "https://github.com/Devollox/Devollox-Website",
-  "logo": "https://tenor.com/t0lBODQpudb.gif",
+  "logo": "https://raw.githubusercontent.com/Devollox/Devollox/main/logo.png",
   "objectDetails": [
     "Next",
     "React",
