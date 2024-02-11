@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import axios from "axios";
-
+import {BrowserRouter as Router, Switch, Route, Link, Routes, BrowserRouter} from 'react-router-dom';
+import Update from "./Update/update";
 export default function Footer() {
 
     const WrapperContent = styled.div`
@@ -42,13 +43,13 @@ export default function Footer() {
             setTimeout(() => {
                 placeHolder.style.display = 'none'
                 time.innerHTML = `
-            <a class="date_container_time">
-                <a href="dashboard" title="Month/Day/Year" style="color: var(--colorfg)" class="hiding_text date_footer">
-                    ${getDate(date)[0]}/
-                    ${getDate(date)[1]}/
-                    2024
-                </a>
-             </a>
+                <a class="date_container_time">
+                    <a title="Month/Day/Year" style="color: var(--colorfg)" class="hiding_text date_footer">
+                        ${getDate(date)[0]}/
+                        ${getDate(date)[1]}/
+                        2024
+                    </a>
+                 </a>
             `
             }, 2000)
         })
@@ -59,13 +60,13 @@ export default function Footer() {
                 <a>This site was developed by Devollox and is getting regular updates</a>
                 <div className='time_update'>
                     <div>Latest update:
-                        <a>
-                            <a className="post">
+                        <a href='/update' style={{color: "var(--colorfg)"}}>
+                             <a className="post">
                                 <div style={{marginBottom: '10px'}} id="time" className='place-font'>
-                                </div>
+                                 </div>
                                     <div id='place-holder' className="place-holder">
-                                </div>
-                            </a>
+                                 </div>
+                             </a>
                         </a>
                     </div>
                 </div>
