@@ -1,0 +1,10 @@
+.container:hover {
+    scale: 105%;
+    transition: 200ms;
+    -webkit-box-shadow: var(--tw-shadow-7);
+    -moz-box-shadow: var(--tw-shadow-7);
+    box-shadow: var(--tw-shadow-7);
+}
+.container:active {
+    scale:90%;
+}
