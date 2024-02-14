@@ -80,10 +80,6 @@
     flex-direction: column;
     gap: 10px;
 }
-
-div {
-    display: block;
-}
 .news #news-box-item>.body {
 
     color: #475569;
