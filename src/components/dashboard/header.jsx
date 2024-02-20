@@ -53,11 +53,8 @@ export default function Header() {
     }
 
     const GridConteniener = styled.div`
-        margin-left: var(--margin-left);
-        margin-right: var(--margin-right);
-        margin-bottom: 4rem;
+        margin: var(--scale-top) var(--margin-right) 4rem var(--margin-left);
         justify-content: center;
-        margin-top: var(--scale-top);
         scale: var(--scale);
     `
 
